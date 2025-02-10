@@ -8,6 +8,7 @@ jobs:
         - run: echo "stage1 step"
 
     stage2:
+      needs: stage1
       runs-on: ubuntu-latest
       steps:
         - run: echo "stage2 step"
