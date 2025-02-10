@@ -5,6 +5,7 @@ jobs:
     stage1:
       runs-on: ubuntu-latest
       steps:
+        - run: echo "::debug file=app.js,line=1::Missing semicolon"
         - run: echo "::error file=app.js,line=1::Missing semicolon"
 
     stage2:
