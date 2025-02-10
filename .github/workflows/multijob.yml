@@ -5,7 +5,7 @@ jobs:
     stage1:
       runs-on: ubuntu-latest
       steps:
-        - run: echo "stage1 step"
+        - run: echo "::error file=app.js,line=1::Missing semicolon"
 
     stage2:
       needs: stage1
