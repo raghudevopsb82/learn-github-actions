@@ -1,0 +1,9 @@
+name: Self runner
+on: [push]
+jobs:
+    stage1:
+      runs-on: self-hosted
+      steps:
+        - run: echo "::notice file=test.sh,line=1,endLine=10,title=Heloo::Just Testing"
+
+
